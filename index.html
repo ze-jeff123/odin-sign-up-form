@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
 
+    <div class="wrapper">
+        <div class="hero-img-container">
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <div class="logo-inner">
+                        <img src="img/odin-lined.png" alt="Odin Project logo" class="logo-img">
+                        <div class="logo-text">THOR</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="credit">Photo by <a href="https://unsplash.com/@koshiera">Sergey Kvint</a> on <a href="https://unsplash.com/">Unplash</a></div>
+        </div>
+
+        <div class="right-content">
+            <div class="header">    
+                <h2>Ever felt like your dramatic monologues were just missing that umpth?</h2>                
+                <p>
+                    With <strong>Thor's lighting bolt delivery service</strong>, you can get those dramatic flashes of
+                    light whenever your heart desires. 
+                    Sign up <em>now</em> to get started.
+                </p>
+
+                <p>You <em>know</em> you want to.</p>
+            </div>
+
+            <div class="middle-content">
+                <h1 class="form-heading">Let's do this!</h1>
+                <form>
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="abc@example.com" required>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="1234-123-123" required>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required placeholder = ' '>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required placeholder=" ">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="footer">
+                <button class="submit-button">Create account</button>
+                <div class="log-in-message">Already have an account? <a href="">Log in</a> </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
